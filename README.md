@@ -1,6 +1,10 @@
-# caesear_decoder
+# Flutter projects
 
-A new Flutter project.
+this is an application that contains all of my quick and easy flutter projects.
+
+feel free to look into it and I would be thrilled if you learnt something from it.
+
+soon enough I will post some gifs from inside the application.
 
 ## Getting Started
 
