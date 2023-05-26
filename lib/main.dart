@@ -1,7 +1,5 @@
 import 'package:caesear_decoder/homepage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:floating_draggable_widget/floating_draggable_widget.dart';
 
 void main() {
   runApp(const MyApp());

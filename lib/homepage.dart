@@ -1,3 +1,4 @@
+import 'package:caesear_decoder/bmi_calc.dart';
 import 'package:caesear_decoder/calc.dart';
 import 'package:flutter/material.dart';
 
@@ -60,12 +61,19 @@ class _HomePageState extends State<HomePage> {
                 });
               },
             ),
-            const ListTile(
-              leading: Icon(Icons.architecture_rounded),
-              title: Text("BMI Calculator",
+            ListTile(
+              leading: const Icon(Icons.architecture_rounded),
+              title: const Text("BMI Calculator",
                   style: TextStyle(color: Colors.yellow),
                   textAlign: TextAlign.center),
-              trailing: Icon(Icons.arrow_forward_ios_rounded),
+              trailing: const Icon(Icons.arrow_forward_ios_rounded),
+              onTap: () {
+                setState(() {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: ((context) => const BmiCalculator())));
+                });
+              },
             )
           ],
         ),
