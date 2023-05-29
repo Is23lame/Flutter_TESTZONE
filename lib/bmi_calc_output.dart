@@ -1,6 +1,4 @@
 import 'dart:math';
-
-import 'package:caesear_decoder/bmi_calc.dart';
 import 'package:flutter/material.dart';
 
 class BmiOutput extends StatefulWidget {

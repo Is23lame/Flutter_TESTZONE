@@ -1,5 +1,6 @@
-import 'package:caesear_decoder/bmi_calc.dart';
-import 'package:caesear_decoder/calc.dart';
+import 'package:flutter_projects/Tic_Tac_Toe.dart';
+import 'package:flutter_projects/bmi_calc.dart';
+import 'package:flutter_projects/calc.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -72,6 +73,20 @@ class _HomePageState extends State<HomePage> {
                   Navigator.of(context).pop();
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: ((context) => const BmiCalculator())));
+                });
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.architecture_rounded),
+              title: const Text("tictactoe",
+                  style: TextStyle(color: Colors.yellow),
+                  textAlign: TextAlign.center),
+              trailing: const Icon(Icons.arrow_forward_ios_rounded),
+              onTap: () {
+                setState(() {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: ((context) => const TicTacToe())));
                 });
               },
             )

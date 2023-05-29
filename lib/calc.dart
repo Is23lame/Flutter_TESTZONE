@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
-import 'package:intl/intl.dart';
 
 class Calc extends StatefulWidget {
   const Calc({super.key});
@@ -14,7 +13,6 @@ var putput = '';
 Parser player = Parser();
 Expression exp = player.parse(putput);
 final controller = TextEditingController();
-final value = NumberFormat("#,##0.00", "en_US");
 
 Widget buttonBuilder(text, col) {
   return OutlinedButton(

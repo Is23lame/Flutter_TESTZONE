@@ -1,4 +1,4 @@
-import 'package:caesear_decoder/homepage.dart';
+import 'package:flutter_projects/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
+        scaffoldBackgroundColor: Colors.black,
         primarySwatch: Colors.deepPurple,
+        useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
